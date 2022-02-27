@@ -54,10 +54,10 @@ class _ArticlesState extends State<Articles> {
                       child: Container(
                         height: 50,
                         color: Colors.grey,
-                        child: Center(
-                            child: kIsWeb
-                                ? Text(list[index].get("designation"))
-                                : const Text("data")),
+                        child: Card(
+                            child: Text(
+                          list[index].get("designation"),
+                        )),
                       ));
                 });
           }
